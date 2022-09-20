@@ -1,14 +1,58 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { FaSpotify } from 'react-icons/fa';
+import '../src/styles/login.css';
+import './fonts/GothamBold.ttf';
+import { Button } from 'react-bootstrap/Button';
+import { Row, Col } from 'react-bootstrap';
+import  Switch  from 'react-ios-switch';
+
 
 const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=a5940cfd306c4b3aa74a8bce326569b4&response_type=code&redirect_uri=https://reeder-rio22.netlify.app&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
 
+
 export default function Login() {
     return (
-        <Container ClassName="d-flex justify-content-center align-items-center" style={{minHeight: "100vh"}}>
-            <a className="btn btn-success bt-lg" href={AUTH_URL}> Login with spotify</a>
-        </Container>
+        
+
+
+        <div className="container" style={{height: "100vh", marginLeft: 0, marginRight: 0}}>
+            <div className="Logo">
+                <i>
+                    <FaSpotify />
+                </i>
+            </div>
+
+            <h2>Reeder Rio 22</h2>
+
+            <div className="Login-Form">
+
+                <form className='form'>
+                    <input type="text" placeholder=' Username'></input>
+                </form>
+
+                <form className="login-password">
+                    <input type="text" placeholder='Password'></input>
+                </form>  
+
+            </div>
+            
+            <Row>
+                <Col>
+                     <Switch /> <p style={{color: '#fff'}}>Remember me</p> 
+                    
+                </Col>
+
+                <Col>
+                    <a className="btn btn-success bt-lg" href={AUTH_URL}> Login with spotify</a>
+                </Col>
+            </Row>
+            
+        </div>
+            
+        
 
     ) 
 
 }
+
+/*to be done - put check next to remember me and align it all and have check working */

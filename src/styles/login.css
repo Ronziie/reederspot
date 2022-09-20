@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "GothamBold";
+    src: local("GothamBold"),
+        url("/src/fonts/GothamBold.ttf") format("truetype");
+    font-weight: normal;
+
+    font-family: "GothamLight";
+    src: local("GothamLight"),
+        url("/src/fonts/GothamLight.ttf") format("truetype");
+    font-weight: normal;
+
+    font-family: "GothamMedium";
+    src: local("GothamMedium"),
+        url("/src/fonts/GothamMedium.ttf") format("truetype");
+    font-weight: normal;
+
+    font-family: "GothamBook";
+    src: local("GothamBook"),
+        url("/src/fonts/GothamBook.ttf") format("truetype");
+    font-weight: normal;
+}
+
+.body .root .div {
+    width: 100% !important;
+    font-family: "GothamBold";
+}
+
+.container {
+    width: 100% !important;
+    z-index: 1;
+    flex-grow: 1;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: black;
+
+} 
+
+.Logo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: green;
+    font-size: 150px;
+
+}
+h2, .h2 {
+    font-size: calc(1.325rem + 0.9vw);
+    color: #f1f1f1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'GothamBook';
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.form {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    background: #f1f1f1;
+    border-style:hidden;
+    border-radius: 30px;
+    padding: 0px, 10px, 0px, 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.login-password {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.btn {
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.Row {
+    
+}
+
