@@ -8,7 +8,7 @@ export default function useAuth(code) {
 
 
   useEffect(() => {
-    axios.post('http://localhost:3001/login', {
+    axios.post('https://reederspot.herokuapp.com/login', {
         code,
     })
     .then(res => {
@@ -29,7 +29,7 @@ export default function useAuth(code) {
     const interval = setInterval(() => {
       
 
-    axios.post('http://localhost:3001/refresh', {
+    axios.post('https://reederspot.herokuapp.com/refresh', {
       refreshToken,
     }).then(res => {
       setAccessToken(res.data.accessToken)
