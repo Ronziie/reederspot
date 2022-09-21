@@ -5,15 +5,18 @@ import './fonts/GothamBold.ttf';
 import { Button } from 'react-bootstrap/Button';
 import { Row, Col } from 'react-bootstrap';
 import  Switch  from 'react-ios-switch';
+import { useState } from 'react';
 
 
 const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=a5940cfd306c4b3aa74a8bce326569b4&response_type=code&redirect_uri=https://reeder-rio22.netlify.app&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
 
 
 export default function Login() {
+    
+    const [changeColour, SetchangeColour] = useState(true);
+
     return (
         
-
 
         <div className="container" style={{height: "100vh", marginLeft: 0, marginRight: 0}}>
             <div className="Logo">
@@ -22,7 +25,7 @@ export default function Login() {
                 </i>
             </div>
 
-            <h2>Reeder Rio 22</h2>
+            <h2>Reeder</h2>
 
             <div className="Login-Form">
 
@@ -38,7 +41,22 @@ export default function Login() {
             
             <Row>
                 <Col>
-                     <Switch /> <p style={{color: '#fff'}}>Remember me</p> 
+                    <Row>
+                        <Col>
+                            <div className={changeColour ? "Remember-Me" : "Remember-Me2" }>
+                                 <p>Remember Me</p>
+                            </div>
+                        </Col>
+                        <Col>
+                            <Switch
+                                checked={changeColour}
+                                onChange={SetchangeColour}
+                            />
+                        </Col>
+                    </Row>
+
+                    
+                     
                     
                 </Col>
 

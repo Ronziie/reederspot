@@ -193,6 +193,12 @@
 
 }
 
+@media screen and (max-width: 550px) {
+    .banner {
+        display: none;
+    }
+}
+
 /* ==============CenterMiddleMenu================================*/
 
 .menuList {
