@@ -450,32 +450,47 @@
 }
 
 @media screen and (max-width: 550px) {
-    .hits .imgBox {
+    .AudioList .songs .song .section .hits {
+        justify-content: space-between;
+        margin-left: 0;
+        margin-top: 5px;
         display: none;
-
     }
 }
 @media screen and (max-width: 550px) {
-    .songName {
+    .AudioList .songs .song .section .songName {
+        width: 100%;
         justify-content: center;
         align-items: center;
-        text-align: center;
-    }
-}
-@media screen and (max-width: 550px) {
-    .musicPlayer .SongImage .img {
-        display: none;
     }
 }
 
 @media screen and (max-width: 550px) {
-    .musicPlayer .songAttributes .bottom
-    .musicPlayer .songAttributes .top {
-        justify-content: center;
+    .AudioList .songs .song .imgBox img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .musicPlayer .songImage img {
+        height: 100%;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .musicPlayer .songAttributes {
         align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
     }
 }
+
   
 @media screen and (max-width: 950px) {
     .Banner {
