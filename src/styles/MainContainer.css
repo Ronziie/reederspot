@@ -480,8 +480,41 @@
         display: none;
     }
 }
+@media screen and (max-width: 550px) {
+    .musicPlayer .songImage {
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgb(0 0 0 / 40%);
+        height: 120px;
+        min-width: 120px;
+        overflow: hidden;
+        width: 120px;
+        display: none;
+    }
+
+}
 
 @media screen and (max-width: 550px) {
+    .AudioList .songs .song .imgBox {
+        background-color: #848484;
+        border-radius: 0.5em;
+        height: 45px;
+        margin-right: 10px;
+        min-width: 45px;
+        overflow: hidden;
+        width: 45px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .menuList, .menuList ul {
+        align-items: center;
+        display: none;
+    }
+}
+
+
+@Media screen and (max-width: 550px) {
     .musicPlayer .songAttributes {
         align-items: center;
         display: flex;
@@ -490,6 +523,7 @@
         width: 100%;
     }
 }
+
 
   
 @media screen and (max-width: 950px) {
