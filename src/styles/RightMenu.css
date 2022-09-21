@@ -74,5 +74,6 @@
   .rightContainer {
     min-width: 64px;
     width: 64px;
+    display: none;
   }
 }

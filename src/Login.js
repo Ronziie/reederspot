@@ -13,7 +13,7 @@ const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=a5940cfd306c4
 
 export default function Login() {
     
-    const [changeColour, SetchangeColour] = useState(true);
+    const [changeColour, SetchangeColour] = useState(false);
 
     return (
         

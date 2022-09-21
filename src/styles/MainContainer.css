@@ -448,6 +448,34 @@
       justify-content: space-between;
     }
 }
+
+@media screen and (max-width: 550px) {
+    .hits .imgBox {
+        display: none;
+
+    }
+}
+@media screen and (max-width: 550px) {
+    .songName {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 550px) {
+    .musicPlayer .SongImage .img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .musicPlayer .songAttributes .bottom
+    .musicPlayer .songAttributes .top {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
   
 @media screen and (max-width: 950px) {
     .Banner {
